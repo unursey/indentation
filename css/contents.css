@@ -23,6 +23,10 @@
   border-bottom: 1px solid #02535f;
 }
 
+.contents__link:hover {
+  border-bottom: 2px solid #02535f;
+}
+
 .contents__item:not(:last-child) {
   margin-bottom: 10px;
 }
