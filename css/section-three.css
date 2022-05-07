@@ -1,0 +1,29 @@
+.section-three__title {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 43px;
+  margin-bottom: 30px;
+}
+
+.section-three__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.section-three__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.section-three__image {
+  display: block;
+  margin: 0 auto 30px auto;
+}
+
+.section-three__image:last-child, .section-three__image_no-bottom {
+  margin-bottom: 0;
+}
+
+.section-three__figure:not(:last-child) {
+  margin-bottom: 30px;
+}

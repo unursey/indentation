@@ -1,0 +1,35 @@
+.section-one {
+  font-size: 0;
+}
+
+.section-one__title {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 43px;
+  margin-bottom: 30px;
+} 
+
+.section-one__image:not(:last-child) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+} 
+
+ .section-one__text {
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 24px;
+ }
+
+ .section-one__text:not(:last-child) {
+    margin-bottom: 30px;
+ }
+
+.section-one__text-block { 
+  display: inline-block;
+  vertical-align: top;
+  max-width: 480px;
+}
+
+.section-one__text-block:nth-child(2n) {
+  margin-right: 40px;
+}

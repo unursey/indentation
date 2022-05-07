@@ -1,0 +1,37 @@
+.section-two__title {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 43px;
+  margin-bottom: 30px;
+}
+
+.section-two__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.section-two__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.section-two__image {
+  display: block;
+  margin: 0 auto 30px auto;
+}
+
+.section-two__figure {
+  margin-bottom: 30px;
+}
+
+.section-two__figure_no-bottom, .section-two__image:last-child {
+  margin-bottom: 0;
+}
+
+.section-two__text_attn {
+  color: #5e5e5e;
+  border: 1px solid #000000;
+  border-top: none;
+  padding: 15px 30px;
+  margin-bottom: 30px;
+}

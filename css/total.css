@@ -1,0 +1,36 @@
+.total {
+  padding-bottom: 60px;
+}
+
+.total__container {
+  border-radius: 10px;
+  padding: 25px 30px;
+  background-color: #f1f1f1;
+}
+
+.total__title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 53px;
+  margin-bottom: 20px;
+}
+
+.total__list {
+  list-style-type: "– ";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #02535f;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.total__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.total__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
