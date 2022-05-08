@@ -92,9 +92,9 @@
   margin-bottom: 30px;
 }
 
-.indentation__figure_no-bottom,
+.indentation__figure_bottom_no,
 .indentation__figure:last-child,
-.indentation__image_no-bottom,
+.indentation__image_bottom_no,
 .indentation__image:last-child {
   margin-bottom: 0;
 }
