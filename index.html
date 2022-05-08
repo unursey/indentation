@@ -19,12 +19,14 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <article>
-      <section class="about">
+    <article class="indentation">
+      <section class="indentation__about">
         <div class="container">
-          <h1 class="about__title">Отступы в вёрстке: margin и padding</h1>
+          <h1 class="indentation__title">
+            Отступы в вёрстке: margin и padding
+          </h1>
 
-          <p class="about__text">
+          <p class="indentation__text">
             В этой статье я рассмотрю самые популярные "стандартные" решения для
             сохранения смысла и хорошей читаемости вашего кода. Если точнее —
             речь пойдет об основных правилах организации отступов. Они сильно
@@ -33,7 +35,7 @@
             части кода продолжат нормально работать.
           </p>
 
-          <p class="about__text">
+          <p class="indentation__text">
             Как это часто бывает, знание базовых принципов поможет проявить
             гибкость и выйти за их пределы. Эти знания особенно важны для
             начинающих, но также будут полезным напоминанием и для более опытных
@@ -43,26 +45,26 @@
         </div>
       </section>
 
-      <section class="contents">
-        <div class="container contents__container">
-          <h2 class="contents__title">Содержание:</h2>
+      <section class="indentation__contents">
+        <div class="container indentation__container">
+          <h2 class="indentation__list-title">Содержание:</h2>
 
           <nav>
-            <ol class="contents__list">
-              <li class="contents__item">
-                <a class="contents__link" href="#one" class="">
+            <ol class="indentation__ol-list">
+              <li class="indentation__item">
+                <a class="indentation__link" href="#one">
                   Отступ задается от предыдущего элемента к следующему
                 </a>
               </li>
 
-              <li class="contents__item">
-                <a class="contents__link" href="#two" class="">
+              <li class="indentation__item">
+                <a class="indentation__link" href="#two">
                   Отступ задается последнему возможному элементу в DOM-дереве
                 </a>
               </li>
 
-              <li class="contents__item">
-                <a class="contents__link" href="#three" class="">
+              <li class="indentation__item">
+                <a class="indentation__link" href="#three">
                   Для последнего элемента группы отступ обнуляется
                 </a>
               </li>
@@ -71,63 +73,63 @@
         </div>
       </section>
 
-      <section class="section-one" id="one">
+      <section class="" id="one">
         <div class="container">
-          <h2 class="section-one__title">
+          <h2 class="indentation__subtitle">
             Отступ задается от предыдущего элемента к следующему: от первого ко
             второму, сверху вниз, слева направо.
           </h2>
 
           <img
-            class="section-one__image"
+            class="indentation__side-image"
             src="img/section-one/margin.jpg"
             alt="Пример отступа margin"
             height="415px"
           />
 
-          <div class="section-one__text-block">
-            <p class="section-one__text">
+          <div class="indentation__text-block">
+            <p class="indentation__text">
               <strong>ВАЖНО: </strong><i>margin</i> всегда задают от предыдущего
               элемента к следующему.
             </p>
 
-            <p class="section-one__text">
+            <p class="indentation__text">
               Свойство <i>margin</i> необходимо только для того, чтобы
               отодвинуть своего соседа справа или снизу, поэтому используется
               <i>margin-right</i> и <i>margin-bottom</i>.
             </p>
 
-            <p class="section-one__text">
+            <p class="indentation__text">
               (!) Свойства <i>margin-left</i> и <i>margin-top</i> используются
               крайне редко.
             </p>
 
-            <p class="section-one__text">
+            <p class="indentation__text">
               Для <i>padding</i> верно обратное. Исключением является его
               применения в декоративных целях, например, для увеличения области
               ссылки.
             </p>
           </div>
 
-          <div class="section-one__text-block">
-            <p class="section-one__text">
+          <div class="indentation__text-block">
+            <p class="indentation__text">
               Отступ внутри блока сверху или слева реализуется через
               <i>padding-top</i> и <i>padding-left</i> родителя.
             </p>
 
-            <p class="section-one__text">
+            <p class="indentation__text">
               Отступы, как правило, делают в направлении от предыдущего элемента
               к следующему. Так элемент не будет толкать сам себя.
             </p>
 
-            <p class="section-one__text">
+            <p class="indentation__text">
               Изначально элемент статичен, а его положение может меняться только
               под воздействием свойств других блоков или свойств родителя.
             </p>
           </div>
 
           <img
-            class="section-one__image"
+            class="indentation__side-image"
             src="img/section-one/padding.jpg"
             alt="Пример отступа padding"
             height="279px"
@@ -135,74 +137,74 @@
         </div>
       </section>
 
-      <section class="section-two" id="two">
+      <section class="" id="two">
         <div class="container">
-          <h2 class="section-two__title">
+          <h2 class="indentation__subtitle">
             Отступ задается последнему возможному элементу в DOM-дереве
           </h2>
 
-          <figure class="section-two__figure">
-            <figcaption class="section-two__text">
+          <figure class="indentation__figure">
+            <figcaption class="indentation__text">
               Вообще, margin задают исключительно между соседними элементами
               DOM-дерева. Для примера, посмотрите на этот список:
             </figcaption>
 
             <img
-              class="section-two__image"
+              class="indentation__image"
               src="img/section-two/list1.jpg"
               alt="Пример отступа между соседними элементами"
               height="537px"
             />
 
             <img
-              class="section-two__image"
+              class="indentation__image"
               src="img/section-two/list2.jpg"
               alt="Пример отступа между соседними элементами"
               height="450px"
             />
           </figure>
 
-          <figure class="section-two__figure section-two__figure_no-bottom">
-            <figcaption class="section-two__text">
+          <figure class="indentation__figure indentation__figure_no-bottom">
+            <figcaption class="indentation__text">
               Отступ делают за счёт соседних элементов, а не дочерних:
             </figcaption>
 
             <img
-              class="section-two__image"
+              class="indentation__image"
               src="img/section-two/list3.jpg"
               alt="Пример отступа между соседними элементами"
               height="427px"
             />
           </figure>
 
-          <p class="section-two__text section-two__text_attn">
+          <p class="indentation__text indentation__text_attn">
             <strong>ВАЖНО:</strong> здесь <i>.list-item</i> — последний
             возможный элемент в котором мы задаём отступ, чтобы разделить
             списки.
           </p>
 
-          <p class="section-two__text">
+          <p class="indentation__text">
             Казалось бы, можно задать отступ параграфу <i>&lt;p&gt;</i>, либо
             обёртке <i>&lt;article&gt;</i> для достижения той же цели. Внешне
             останется все точно также, но так делать не рекомендуется.
           </p>
 
-          <figure class="section-two__figure">
-            <figcaption class="section-two__text">
+          <figure class="indentation__figure">
+            <figcaption class="indentation__text">
               Предыдущий пример был достаточно простым, но бывает вложенность
               значительно больше.
             </figcaption>
 
             <img
-              class="section-two__image"
+              class="indentation__image"
               src="img/section-two/title1.jpg"
               alt="Пример отступа между соседними элементами"
               height="164px"
             />
           </figure>
 
-          <figure class="section-two__figure">
-            <figcaption class="section-two__text">
+          <figure class="indentation__figure">
+            <figcaption class="indentation__text">
               В случае с заголовком, если ему необходим отступ сверху, последним
               элементом будет <i>section</i>. Именно для него задается
               <i>padding-top</i>, а не <i>div</i> с классом container. Свойства
@@ -210,14 +212,14 @@
             </figcaption>
 
             <img
-              class="section-two__image"
+              class="indentation__image"
               src="img/section-two/title2.jpg"
               alt="Пример отступа между соседними элементами"
               height="504px"
             />
           </figure>
 
-          <p class="section-two__text">
+          <p class="indentation__text">
             Это необходимо для более простого поиска отступов в будущем — для
             вас или того, кто будет верстать после вас. Кроме того, возможны
             серьёзные проблемы при динамическом дублировании или выводе вёрстки
@@ -226,32 +228,32 @@
         </div>
       </section>
 
-      <section class="section-three" id="three">
+      <section class="" id="three">
         <div class="container">
-          <h2 class="section-three__title">
+          <h2 class="indentation__subtitle">
             Для последнего элемента группы отступ всегда обнуляется
           </h2>
 
-          <p class="section-three__text">
+          <p class="indentation__text">
             Для наглядности возьмём наш предыдущий пример с рецептами
           </p>
 
-          <figure class="section-three__figure">
-            <figcaption class="section-three__text">
+          <figure class="indentation__figure">
+            <figcaption class="indentation__text">
               Между рецептами расстояние одинаковое. Можно заметить, что и до
               следующего блока расстояние такое же.
             </figcaption>
 
             <img
-              class="section-three__image"
+              class="indentation__image"
               src="img/section-three/last-item1.jpg"
               alt="Пример отступа для последнего элемента в списке"
               height="600px"
             />
           </figure>
 
-          <figure class="section-three__figure">
-            <figcaption class="section-three__text">
+          <figure class="indentation__figure">
+            <figcaption class="indentation__text">
               В соответствии со вторым принципом: последний margin обнуляется, а
               нижний отступ задаётся через padding для section. Я чаще всего
               задаю padding для секции с обоих сторон, если расстояние между
@@ -260,68 +262,68 @@
             </figcaption>
 
             <img
-              class="section-three__image"
+              class="indentation__image"
               src="img/section-three/last-item2.jpg"
               alt="Пример отступа для последнего элемента в списке"
               height="607px"
             />
             <img
-              class="section-three__image section-three__image_no-bottom"
+              class="indentation__image indentation__image_no-bottom"
               src="img/section-three/last-item3.jpg"
               alt="Пример отступа для последнего элемента в списке"
               height="528px"
             />
             <img
-              class="section-three__image"
+              class="indentation__image"
               src="img/section-three/last-item4.jpg"
               alt="Пример отступа для последнего элемента в списке"
               height="530px"
             />
           </figure>
 
-          <figure class="section-three__figure">
-            <figcaption class="section-three__text">
+          <figure class="indentation__figure">
+            <figcaption class="indentation__text">
               Для большего понимания рассмотрим другой пример, который часто
               встречается на практике:
             </figcaption>
 
             <img
-              class="section-three__image"
+              class="indentation__image"
               src="img/section-three/nav1.jpg"
               alt="Пример отступа для последнего элемента меню"
               height="88px"
             />
 
             <img
-              class="section-three__image"
+              class="indentation__image"
               src="img/section-three/nav2.jpg"
               alt="Пример отступа для последнего элемента меню"
               height="475px"
             />
           </figure>
 
-          <figure class="section-three__figure">
-            <figcaption class="section-three__text">
+          <figure class="indentation__figure">
+            <figcaption class="indentation__text">
               Здесь нас интересует отступ между пунктами меню и списком с
               кнопкой поиска. Отступы между пунктами меню задаются так:
             </figcaption>
 
             <img
-              class="section-three__image"
+              class="indentation__image"
               src="img/section-three/nav3.jpg"
               alt="Пример отступа для последнего элемента меню"
               height="110px"
             />
           </figure>
 
-          <figure class="section-three__figure">
-            <figcaption class="section-three__text">
+          <figure class="indentation__figure">
+            <figcaption class="indentation__text">
               Советую использовать псевдоклассы :last-child чаще других,
               например так:
             </figcaption>
 
             <img
-              class="section-three__image"
+              class="indentation__image"
               src="img/section-three/nav4.jpg"
               alt="Пример отступа для последнего элемента меню"
               height="383px"
@@ -330,33 +332,33 @@
         </div>
       </section>
 
-      <section class="total">
-        <div class="container total__container">
-          <h2 class="total__title">Подытожим:</h2>
+      <section class="indentation__total">
+        <div class="container indentation__container">
+          <h2 class="indentation__list-title">Подытожим:</h2>
 
-          <ul class="total__list">
-            <li class="total__item">
+          <ul class="indentation__ul-list">
+            <li class="indentation__item">
               отступы задаём от предыдущего элемента к следующему
             </li>
 
-            <li class="total__item">
+            <li class="indentation__item">
               используем только margin-right и margin-bottom
             </li>
 
-            <li class="total__item">
+            <li class="indentation__item">
               внешние отступы задаются только между соседями
             </li>
 
-            <li class="total__item">
+            <li class="indentation__item">
               внутренний отступ задаём самому верхнему элементу в дом дереве
             </li>
 
-            <li class="total__item">
+            <li class="indentation__item">
               последнему элементу группы отступ всегда обнуляем
             </li>
           </ul>
 
-          <p class="total__text">
+          <p class="indentation__text">
             Конечно бывают исключения. Ведь макеты бывают различной сложности.
             Иногда базовые принципы приходится нарушать в угоду дизайнерского
             решения или простоты вёрстки. Но для этого эти принципы необходимо

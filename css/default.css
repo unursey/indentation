@@ -50,6 +50,7 @@ h1, h2, h3, p, figure, fieldset {
 
 section {
   padding: 25px 0;
+  font-size: 0;
 }
 
 
