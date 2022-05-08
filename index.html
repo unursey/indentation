@@ -20,30 +20,26 @@
   </head>
   <body>
     <article class="indentation">
-      <section class="indentation__about">
-        <div class="container">
-          <h1 class="indentation__title">
-            Отступы в вёрстке: margin и padding
-          </h1>
+      <div class="container">
+        <h1 class="indentation__title">Отступы в вёрстке: margin и padding</h1>
 
-          <p class="indentation__text">
-            В этой статье я рассмотрю самые популярные "стандартные" решения для
-            сохранения смысла и хорошей читаемости вашего кода. Если точнее —
-            речь пойдет об основных правилах организации отступов. Они сильно
-            влияют на общую функциональность кода и, если всё сделано верно,
-            позволяют легко вносить изменения в любую его часть. При этом другие
-            части кода продолжат нормально работать.
-          </p>
+        <p class="indentation__text">
+          В этой статье я рассмотрю самые популярные "стандартные" решения для
+          сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь
+          пойдет об основных правилах организации отступов. Они сильно влияют на
+          общую функциональность кода и, если всё сделано верно, позволяют легко
+          вносить изменения в любую его часть. При этом другие части кода
+          продолжат нормально работать.
+        </p>
 
-          <p class="indentation__text">
-            Как это часто бывает, знание базовых принципов поможет проявить
-            гибкость и выйти за их пределы. Эти знания особенно важны для
-            начинающих, но также будут полезным напоминанием и для более опытных
-            верстальщиков. Итак, поговорим о фундаментальных основах работы с
-            отступами в вёрстке.
-          </p>
-        </div>
-      </section>
+        <p class="indentation__text">
+          Как это часто бывает, знание базовых принципов поможет проявить
+          гибкость и выйти за их пределы. Эти знания особенно важны для
+          начинающих, но также будут полезным напоминанием и для более опытных
+          верстальщиков. Итак, поговорим о фундаментальных основах работы с
+          отступами в вёрстке.
+        </p>
+      </div>
 
       <section class="indentation__contents">
         <div class="container indentation__container">
@@ -84,37 +80,70 @@
             class="indentation__side-image"
             src="img/section-one/margin.jpg"
             alt="Пример отступа margin"
-            height="415px"
           />
 
           <div class="indentation__text-block">
             <p class="indentation__text">
-              <strong>ВАЖНО: </strong><i>margin</i> всегда задают от предыдущего
-              элемента к следующему.
+              <strong class="indentation__text">
+                <span class="indentation__text indentation__text_style_bold"
+                  >ВАЖНО:
+                </span>
+                <span class="indentation__text indentation__text_style_italic"
+                  >margin</span
+                >
+                всегда задают от предыдущего элемента к следующему.
+              </strong>
             </p>
 
             <p class="indentation__text">
-              Свойство <i>margin</i> необходимо только для того, чтобы
-              отодвинуть своего соседа справа или снизу, поэтому используется
-              <i>margin-right</i> и <i>margin-bottom</i>.
+              Свойство
+              <span class="indentation__text indentation__text_style_italic"
+                >margin</span
+              >
+              необходимо только для того, чтобы отодвинуть своего соседа справа
+              или снизу, поэтому используется
+              <span class="indentation__text indentation__text_style_italic"
+                >margin-right</span
+              >
+              и
+              <span class="indentation__text indentation__text_style_italic"
+                >margin-bottom</span
+              >.
             </p>
 
             <p class="indentation__text">
-              (!) Свойства <i>margin-left</i> и <i>margin-top</i> используются
-              крайне редко.
+              (!) Свойства
+              <span class="indentation__text indentation__text_style_italic"
+                >margin-left</span
+              >
+              и
+              <span class="indentation__text indentation__text_style_italic"
+                >margin-top</span
+              >
+              используются крайне редко.
             </p>
 
             <p class="indentation__text">
-              Для <i>padding</i> верно обратное. Исключением является его
-              применения в декоративных целях, например, для увеличения области
-              ссылки.
+              Для
+              <span class="indentation__text indentation__text_style_italic" i
+                >padding</span
+              >
+              верно обратное. Исключением является его применения в декоративных
+              целях, например, для увеличения области ссылки.
             </p>
           </div>
 
           <div class="indentation__text-block">
             <p class="indentation__text">
               Отступ внутри блока сверху или слева реализуется через
-              <i>padding-top</i> и <i>padding-left</i> родителя.
+              <span class="indentation__text indentation__text_style_italic"
+                >padding-top</span
+              >
+              и
+              <span class="indentation__text indentation__text_style_italic"
+                >padding-left</span
+              >
+              родителя.
             </p>
 
             <p class="indentation__text">
@@ -132,7 +161,6 @@
             class="indentation__side-image"
             src="img/section-one/padding.jpg"
             alt="Пример отступа padding"
-            height="279px"
           />
         </div>
       </section>
@@ -153,14 +181,12 @@
               class="indentation__image"
               src="img/section-two/list1.jpg"
               alt="Пример отступа между соседними элементами"
-              height="537px"
             />
 
             <img
               class="indentation__image"
               src="img/section-two/list2.jpg"
               alt="Пример отступа между соседними элементами"
-              height="450px"
             />
           </figure>
 
@@ -175,20 +201,32 @@
               class="indentation__image"
               src="img/section-two/list3.jpg"
               alt="Пример отступа между соседними элементами"
-              height="427px"
             />
           </figure>
 
           <p class="indentation__text indentation__text_border_without-top">
-            <strong>ВАЖНО:</strong> здесь <i>.list-item</i> — последний
-            возможный элемент в котором мы задаём отступ, чтобы разделить
-            списки.
+            <strong class="indentation__text"
+              ><span class="indentation__text indentation__text_style_bold"
+                >ВАЖНО: </span
+              >здесь
+              <span class="indentation__text indentation__text_style_italic"
+                >.list-item</span
+              >
+              — последний возможный элемент в котором мы задаём отступ, чтобы
+              разделить списки.
+            </strong>
           </p>
 
           <p class="indentation__text">
-            Казалось бы, можно задать отступ параграфу <i>&lt;p&gt;</i>, либо
-            обёртке <i>&lt;article&gt;</i> для достижения той же цели. Внешне
-            останется все точно также, но так делать не рекомендуется.
+            Казалось бы, можно задать отступ параграфу
+            <span class="indentation__text indentation__text_style_italic"
+              >&lt;p&gt;</span
+            >, либо обёртке
+            <span class="indentation__text indentation__text_style_italic"
+              >&lt;article&gt;</span
+            >
+            для достижения той же цели. Внешне останется все точно также, но так
+            делать не рекомендуется.
           </p>
 
           <figure class="indentation__figure">
@@ -201,23 +239,32 @@
               class="indentation__image"
               src="img/section-two/title1.jpg"
               alt="Пример отступа между соседними элементами"
-              height="164px"
             />
           </figure>
 
           <figure class="indentation__figure">
             <figcaption class="indentation__text">
               В случае с заголовком, если ему необходим отступ сверху, последним
-              элементом будет <i>section</i>. Именно для него задается
-              <i>padding-top</i>, а не <i>div</i> с классом container. Свойства
-              <i>margin</i>, которые стоят по умолчанию необходимо обнулить.
+              элементом будет
+              <span class="indentation__text indentation__text_style_italic"
+                >section</span
+              >. Именно для него задается
+              <span class="indentation__text indentation__text_style_italic"
+                >padding-top</span
+              >, а не
+              <span class="indentation__text indentation__text_style_italic"
+                >div</span
+              >
+              с классом container. Свойства
+              <span class="indentation__text indentation__text_style_italic"
+                >margin</span
+              >, которые стоят по умолчанию необходимо обнулить.
             </figcaption>
 
             <img
               class="indentation__image"
               src="img/section-two/title2.jpg"
               alt="Пример отступа между соседними элементами"
-              height="504px"
             />
           </figure>
 
@@ -250,7 +297,6 @@
               class="indentation__image"
               src="img/section-three/last-item1.jpg"
               alt="Пример отступа для последнего элемента в списке"
-              height="600px"
             />
           </figure>
 
@@ -267,19 +313,17 @@
               class="indentation__image"
               src="img/section-three/last-item2.jpg"
               alt="Пример отступа для последнего элемента в списке"
-              height="607px"
             />
+
             <img
               class="indentation__image indentation__image_margin-bottom_no"
               src="img/section-three/last-item3.jpg"
               alt="Пример отступа для последнего элемента в списке"
-              height="528px"
             />
             <img
               class="indentation__image"
               src="img/section-three/last-item4.jpg"
               alt="Пример отступа для последнего элемента в списке"
-              height="530px"
             />
           </figure>
 
@@ -293,14 +337,12 @@
               class="indentation__image"
               src="img/section-three/nav1.jpg"
               alt="Пример отступа для последнего элемента меню"
-              height="88px"
             />
 
             <img
               class="indentation__image"
               src="img/section-three/nav2.jpg"
               alt="Пример отступа для последнего элемента меню"
-              height="475px"
             />
           </figure>
 
@@ -314,7 +356,6 @@
               class="indentation__image"
               src="img/section-three/nav3.jpg"
               alt="Пример отступа для последнего элемента меню"
-              height="110px"
             />
           </figure>
 
@@ -328,7 +369,6 @@
               class="indentation__image"
               src="img/section-three/nav4.jpg"
               alt="Пример отступа для последнего элемента меню"
-              height="383px"
             />
           </figure>
         </div>

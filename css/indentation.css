@@ -1,4 +1,4 @@
-.indentation__about {
+.indentation {
   padding-top: 60px;
 }
 
@@ -6,6 +6,10 @@
   border-radius: 10px;
   padding: 25px 45px;
   background-color: #f1f1f1;
+}
+
+.indentation__contents {
+  padding-top: 50px;
 }
 
 .indentation__title {
@@ -23,6 +27,7 @@
 }
 
 .indentation__text {
+  font-style: normal;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -30,6 +35,14 @@
 
 .indentation__text:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.indentation__text_style_italic {
+  font-style: italic;
+}
+
+.indentation__text_style_bold {
+  font-weight: bold;
 }
 
 .indentation__list-title {
