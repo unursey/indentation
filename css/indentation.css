@@ -92,14 +92,14 @@
   margin-bottom: 30px;
 }
 
-.indentation__figure_bottom_no,
+.indentation__figure_margin-bottom_no,
 .indentation__figure:last-child,
-.indentation__image_bottom_no,
+.indentation__image_margin-bottom_no,
 .indentation__image:last-child {
   margin-bottom: 0;
 }
 
-.indentation__text_border {
+.indentation__text_border_without-top {
   color: #5e5e5e;
   border: 1px solid #000000;
   border-top: none;
